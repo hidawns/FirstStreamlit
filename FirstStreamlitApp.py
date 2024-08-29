@@ -17,7 +17,8 @@ def preprocess_input(experience, num_of_qualifications, rating, miscellaneous_in
         'Rating': [rating],
         'Miscellaneous_Info': [1 if miscellaneous_info == 'Present' else 0],
         'Profile': [profile],
-        'Place': [place]
+        'Place': [place],
+        'Fee_category': [0.0]
     })
 
     # Encode the Profile and Place columns
@@ -29,7 +30,7 @@ def preprocess_input(experience, num_of_qualifications, rating, miscellaneous_in
 
     # Scaling
     scaler = MinMaxScaler()
-    cols_to_scale = ['Experience', 'Num_of_Qualifications', 'Rating', 'Miscellaneous_Info', 'Profile', 'Place']
+    cols_to_scale = ['Experience', 'Num_of_Qualifications', 'Rating', 'Miscellaneous_Info', 'Profile', 'Place', 'Fee_category']
     input_df[cols_to_scale] = scaler.fit_transform(input_df[cols_to_scale])
 
     return input_df
