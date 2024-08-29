@@ -17,5 +17,13 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 model = joblib.load('XGB_model.pkl')
 
-st.title("Hello, World!")
+st.title("Estimasi Tarif Konsultasi Dokter")
+
+#Experience = 
+#Rating =
 Profile = st.selectbox('Profile', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
+#Miscellaneous_Info =
+#Num_of_Qualifications =
+#District = 
+#City = 
+
