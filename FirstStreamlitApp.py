@@ -19,11 +19,11 @@ model = joblib.load('XGB_model.pkl')
 
 st.title("Estimasi Tarif Konsultasi Dokter")
 
-#Experience = 
-#Rating =
+Experience = st.number_input('Experience (Berapa tahun dokter tersebut berpengalaman di bidangnya)', min_value=0, max_value=66)
+Rating = st.number_input('Rating Dokter')
 Profile = st.selectbox('Profile (Spesialisasi Dokter)', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
 Miscellaneous_Info = st.selectbox('Miscellaneous_Info (Deskripsi Profil)', ('Ada', 'Tidak Ada'))
 #Num_of_Qualifications = 
-#District = 
-#City = 
+District = st.text_input('District')
+City = st.selectbox('City', ('Bangalore', 'Chennai', 'Coimbatore', 'Delhi', 'Ernakulam', 'Hyderabad', 'Mumbai', 'Thiruvananthapuram', 'Lainnya'))
 
