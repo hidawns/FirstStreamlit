@@ -19,11 +19,11 @@ model = joblib.load('XGB_model.pkl')
 
 st.title("Estimasi Tarif Konsultasi Dokter")
 
-Experience = st.number_input('Experience (Berapa tahun dokter tersebut berpengalaman di bidangnya)', min_value=0, max_value=66)
-Rating = st.number_input('Rating Dokter')
-Profile = st.selectbox('Profile (Spesialisasi Dokter)', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
-Miscellaneous_Info = st.selectbox('Miscellaneous_Info (Deskripsi Profil)', ('Ada', 'Tidak Ada'))
+Experience = st.number_input('EXPERIENCE (Berapa tahun dokter tersebut berpengalaman di bidangnya)', min_value=0, max_value=66)
+Rating = st.number_input('RATING (Rating Dokter)', min_value=0, max_value=100)
+Profile = st.selectbox('PROFILE (Spesialisasi Dokter)', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
+Miscellaneous_Info = st.selectbox('MISCELLANEOUS_INFO (Deskripsi Profil)', ('Ada', 'Tidak Ada'))
 #Num_of_Qualifications = 
-District = st.text_input('District')
-City = st.selectbox('City', ('Bangalore', 'Chennai', 'Coimbatore', 'Delhi', 'Ernakulam', 'Hyderabad', 'Mumbai', 'Thiruvananthapuram', 'Lainnya'))
+District = st.text_input('DISTRICT')
+City = st.selectbox('CITY', ('Bangalore', 'Chennai', 'Coimbatore', 'Delhi', 'Ernakulam', 'Hyderabad', 'Mumbai', 'Thiruvananthapuram', 'Lainnya'))
 
