@@ -1,3 +1,6 @@
 import streamlit as st
-st.title("Hello, World! :wave:")
-st.write("Welcome to my first Streamlit app! :tada:")
+
+model = joblib.load('XGB_model.pkl')
+
+st.title("Hello, World!")
+Profile = st.selectbox('Profile', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
