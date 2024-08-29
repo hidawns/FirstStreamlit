@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 import joblib
 
 # Load the trained model
-model = joblib.load('XGB_model.pkl')
+model = joblib.load('XGB_model (1).pkl')
 
 # Function to preprocess user inputs
 def preprocess_input(experience, num_of_qualifications, rating, miscellaneous_info, profile, place):
