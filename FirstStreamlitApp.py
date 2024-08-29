@@ -21,9 +21,9 @@ st.title("Estimasi Tarif Konsultasi Dokter")
 
 #Experience = 
 #Rating =
-Profile = st.selectbox('Profile', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
-#Miscellaneous_Info =
-#Num_of_Qualifications =
+Profile = st.selectbox('Profile (Spesialisasi Dokter)', ('Dentist', 'General Medicine', 'Dermatologists', 'Homeopath', 'Ayurveda', 'ENT Specialist'))
+Miscellaneous_Info = st.selectbox('Miscellaneous_Info (Deskripsi Profil)', ('Ada', 'Tidak Ada'))
+#Num_of_Qualifications = 
 #District = 
 #City = 
 
